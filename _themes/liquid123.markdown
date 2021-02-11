@@ -5,6 +5,9 @@ position: 2
 ---
 
 {% raw %}
-  In Handlebars, {{ this }} will be HTML-escaped, but
-  {{{ that }}} will not.
+{% if page.title == 'Home' %}
+  Do something if condition is true
+{% else %}
+  Do something if condition is false
+{% endif %}
 {% endraw %}
