@@ -8,10 +8,6 @@ position: 2
 {% raw %}
 {% if customer.name == "kevin" %}
   Hey Kevin!
-{% elsif customer.name == "anonymous" %}
-  Hey Anonymous!
-{% else %}
-  Hi Stranger!
 {% endif %}
 {% endraw %}
 {% endhighlight %}
