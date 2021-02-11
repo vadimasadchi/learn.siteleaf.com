@@ -6,10 +6,12 @@ position: 2
 
 {% highlight liquid %}
 {% raw %}
-{% if page.title == "Home" %}
-  Do something if condition is true
+{% if customer.name == "kevin" %}
+  Hey Kevin!
+{% elsif customer.name == "anonymous" %}
+  Hey Anonymous!
 {% else %}
-  Do something if condition is false
+  Hi Stranger!
 {% endif %}
 {% endraw %}
 {% endhighlight %}
