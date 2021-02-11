@@ -13,7 +13,7 @@ For an in-depth Liquid reference, check out the [official Liquid documentation](
 
 A tag is a piece of logic that will tell the templating engine what to do. This includes operations like `if`, `for`, `foreach`, and `capture`. For example:
 
-{% highlight liquid %}
+{% highlight ruby %}
 {% raw %}
 {% if page.title == 'Home' %}
   Do something if condition is true
@@ -29,7 +29,7 @@ Note that each tag is ended with the same tag, prepended with `end`.
 
 An object is a piece of data that has attributes with content. An object can be your site, a post, a set of posts, and so on. For example:
 
-{% highlight liquid %}
+{% highlight ruby %}
 {% raw %}
 {{ page.title }}
 {% endraw %}
@@ -39,7 +39,7 @@ An object is a piece of data that has attributes with content. An object can be 
 
 Filters are used to modify the output of attributes (i.e., strings, numbers, variables, and objects):
 
-{% highlight liquid %}
+{% highlight ruby %}
 {% raw %}
 {{ 'sales' | append: '.jpg' }}
 <!-- Outputs: sales.jpg -->
