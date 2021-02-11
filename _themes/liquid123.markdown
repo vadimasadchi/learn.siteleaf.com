@@ -5,7 +5,7 @@ position: 2
 ---
 
 {% raw %}
-{% if product.title == "Awesome Shoes" %}
+{% if page.title == "Awesome Shoes" %}
   These shoes are awesome!
 {% endif %}
 {% endraw %}
