@@ -5,9 +5,7 @@ position: 2
 ---
 
 {% raw %}
-{% if page.title == 'Home' %}
-  Do something if condition is true
-{% else %}
-  Do something if condition is false
+{% if product.title == "Awesome Shoes" %}
+  These shoes are awesome!
 {% endif %}
 {% endraw %}
